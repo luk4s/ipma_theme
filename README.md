@@ -1,0 +1,1 @@
+# Mautic theme for IPMA
