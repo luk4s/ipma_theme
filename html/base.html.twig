@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if page is defined %}
+        <title>{pagetitle}</title>
+        <meta name="description" content="{pagemetadescription}">
+        {% endif %}
+        <link rel="stylesheet"href="https://www.ipma.cz/bundles/css/core" type="text/css" />
+        {# <link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/base.css') }}" type="text/css" /> #}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{ outputHeadDeclarations() }}
+    </head>
+    <body style="padding: 0;margin: 0;display: block;-webkit-text-size-adjust: none;-webkit-font-smoothing: antialiased;width: 100%;height: 100%;color: #1e1e1e;font-size: 17px;">
+        {{ outputScripts('bodyOpen') }}
+        {% block content %}{% endblock %}
+        {{ outputScripts('bodyClose') }}
+    </body>
+</html>
