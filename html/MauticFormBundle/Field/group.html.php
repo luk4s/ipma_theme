@@ -34,7 +34,8 @@ $firstId = 'mauticform_'.$containerType.'_'.$type.'_'.$field['alias'].'_'.InputH
 
 $label = (!$field['showLabel']) ? '' : <<<HTML
 
-                <label $labelAttr for="$firstId">{$field['label']}</label>
+                <!-- <label $labelAttr for="$firstId">{$field['label']}</label> -->
+                <h2>{$field['label']}</h2>
 HTML;
 
 $help = (empty($field['helpMessage'])) ? '' : <<<HTML
@@ -74,8 +75,8 @@ $optionHtml = implode('', $options);
 
 $html = <<<HTML
 
-            <div $containerAttr class="input-group with-checkbox">
-            {$label}{$help}{$optionHtml}
+            <div class="input-group with-checkbox">
+                {$label}{$help}{$optionHtml}
                 <span class="mauticform-errormsg" style="display: none;">$validationMessage</span>
             </div>
 

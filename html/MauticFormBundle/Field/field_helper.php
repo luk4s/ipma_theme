@@ -32,8 +32,8 @@ if (!isset($formName)) {
 
 $properties = $field['properties'];
 
-$defaultInputClass = 'Xmauticform-'.$defaultInputClass;
-$defaultLabelClass = 'Xmauticform-'.$defaultLabelClass;
+$defaultInputClass = 'mauticform-'.$defaultInputClass;
+$defaultLabelClass = 'mauticform-'.$defaultLabelClass;
 
 $name = '';
 if (empty($ignoreName)) {

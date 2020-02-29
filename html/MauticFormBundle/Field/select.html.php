@@ -20,7 +20,7 @@ if (!empty($properties['multiple'])) {
 
 $label = (!$field['showLabel']) ? '' : <<<HTML
 
-                <label $labelAttr>{$field['label']}</label>
+                <h2>{$field['label']}</h2>
 HTML;
 
 $help = (empty($field['helpMessage'])) ? '' : <<<HTML
@@ -65,7 +65,7 @@ $optionsHtml = $optionBuilder($list, $emptyOption);
 $html        = <<<HTML
 
             <div $containerAttr class="input-group">{$label}{$help}
-                <select $inputAttr class="dropdown-input">$optionsHtml
+                <select class="dropdown-input custom-select custom-select-lg" $inputAttr >$optionsHtml
                 </select>
                 <span class="mauticform-errormsg" style="display: none;">$validationMessage</span>
             </div>

@@ -29,7 +29,7 @@ HTML;
 if ($containerType == 'textarea'):
 $textInput = <<<HTML
 
-                <textarea $inputAttr rows="4">{$field['defaultValue']}</textarea>
+                <textarea $inputAttr rows="4" style="max-width:66.66667%">{$field['defaultValue']}</textarea>
 HTML;
 
 else:
