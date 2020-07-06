@@ -40,7 +40,7 @@ HTML;
 
 $help = (empty($field['helpMessage'])) ? '' : <<<HTML
 
-                <span class="mauticform-helpmessage">{$field['helpMessage']}</span>
+                <p class="mauticform-helpmessage">{$field['helpMessage']}</p>
 HTML;
 
 $options = [];

@@ -86,12 +86,12 @@ if (!empty($inForm)) {
 }
 $appendAttribute($inputAttr, 'onchange', "this.classList.add('is-filled')");
 // Container
-$containerAttr = 'id="mauticform ipma '.$formName.'_'.$id.'" '.htmlspecialchars_decode($field['containerAttributes']);
+$containerAttr = 'id="mauticform'.$formName.'_'.$id.'" '.htmlspecialchars_decode($field['containerAttributes']);
 if (!isset($containerClass)) {
     $containerClass = $containerType;
 }
 $order                 = (isset($field['order'])) ? $field['order'] : 0;
-$defaultContainerClass = 'input-group mauticform-'.$containerClass.' mauticform-field-'.$order;
+$defaultContainerClass = 'input-group mauticform-row mauticform-'.$containerClass.' mauticform-field-'.$order;
 
 // Field is required
 $validationMessage = '';

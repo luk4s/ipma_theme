@@ -1,118 +1,118 @@
 <style type="text/css" scoped>
-    html {
-      background-color: #f5f5f5;
-      box-sizing: border-box;
-      font-size: 10px;
-      font-family: sans-serif;
-      line-height: 1.15;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-    }
-    @media only screen and (min-width: 480px) {
-      .signup-form .input-group [type="email"],
-      .signup-form .input-group [type="number"],
-      .signup-form .input-group [type="password"],
-      .signup-form .input-group [type="url"],
-      .signup-form .input-group [type="tel"],
-      select {
-        max-width: 340px;
-        max-width: 34rem;
-      }
-    }
-    @media only screen and (min-width: 992px){
-      [type="email"]+label,
-      [type="number"]+label,
-      [type="tel"]+label,
-      [type="url"]+label,
-      [type="password"]+label {
-        font-size: 15px;
-        font-size: 1.5rem;
-      }
-    }
-    [type="email"], 
-    [type="number"],
-    [type="tel"],
-    [type="url"],
-    [type="password"] {
-      background-color: transparent;
-      border: 1px solid #cecece;      
-      padding: 10px 15px;
-      padding: 1rem 1.5rem;
-      border-radius: 10px;
-      width: 100%;
-      transition: all .3s ease;
-      font-size: 14px;
-      font-size: 1.4rem;
-      font-style: italic;
-      color: #818181;
-      line-height: 1;
-      width: 100%;
-      position: relative;
-      z-index: 555;
-    }
-  
-    [type="email"]+label,
-    [type="number"]+label,
-    [type="tel"]+label,
-    [type="url"]+label,
-    [type="password"]+label {
-      font-size: 14px;
-      font-size: 1.4rem;
-      color: #818181;
-      transition: all .2s ease;
-      font-style: italic;
-      position: absolute;
-      top: 13px;
-      left: 15px;
-      padding: 0 5px;
-      padding: 0 .5rem;
-      line-height: 1;
-      z-index: 0;
-    }
-    [type="email"]:focus+label,
-    [type="email"].is-filled+label,
-    [type="email"].with-autocomplete-active+label,
-    [type="tel"]:focus+label,
-    [type="tel"].is-filled+label,
-    [type="tel"].with-autocomplete-active+label,
-    [type="url"]:focus+label,
-    [type="url"].is-filled+label,
-    [type="url"].with-autocomplete-active+label,
-    [type="number"]:focus+label,
-    [type="number"].is-filled+label,
-    [type="number"].with-autocomplete-active+label,
-    [type="password"]:focus+label,
-    [type="password"].is-filled+label,
-    [type="password"].with-autocomplete-active+label {
-      transform: translate3d(0,-1.5em,0);
-      color: #20458d;
-      font-size: 12px;
-      font-size: 1.2rem;
-      background-color: #f5f5f5;
-      z-index: 666;
-    }
-    [type="email"]+label,
-    [type="number"]+label,
-    [type="tel"]+label,
-    [type="url"]+label,
-    [type="password"]+label {
-      font-size: 14px;
-      font-size: 1.4rem;
-      color: #818181;
-      transition: all .2s ease;
-      font-style: italic;
-      position: absolute;
-      top: 13px;
-      left: 15px;
-      padding: 0 5px;
-      padding: 0 .5rem;
-      line-height: 1;
-      z-index: 0;
-    }
-    .signup-form .with-checkbox span {
-      margin-left: 3px;
-    }
-  
+html {
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+@media only screen and (min-width: 480px) {
+  .signup-form .input-group [type="email"],
+  .signup-form .input-group [type="number"],
+  .signup-form .input-group [type="password"],
+  .signup-form .input-group [type="url"],
+  .signup-form .input-group [type="tel"],
+  select {
+    max-width: 340px;
+    max-width: 34rem;
+  }
+}
+@media only screen and (min-width: 992px){
+  [type="email"]+label,
+  [type="number"]+label,
+  [type="tel"]+label,
+  [type="url"]+label,
+  [type="password"]+label {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+[type="email"], 
+[type="number"],
+[type="tel"],
+[type="url"],
+[type="password"] {
+  background-color: transparent;
+  border: 1px solid #cecece;      
+  padding: 10px 15px;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  transition: all .3s ease;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #818181;
+  line-height: 1;
+  width: 100%;
+  position: relative;
+  z-index: 555;
+}
+
+[type="email"]+label,
+[type="number"]+label,
+[type="tel"]+label,
+[type="url"]+label,
+[type="password"]+label {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #818181;
+  transition: all .2s ease;
+  font-style: italic;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  padding: 0 5px;
+  padding: 0 .5rem;
+  line-height: 1;
+  z-index: 0;
+}
+[type="email"]:focus+label,
+[type="email"].is-filled+label,
+[type="email"].with-autocomplete-active+label,
+[type="tel"]:focus+label,
+[type="tel"].is-filled+label,
+[type="tel"].with-autocomplete-active+label,
+[type="url"]:focus+label,
+[type="url"].is-filled+label,
+[type="url"].with-autocomplete-active+label,
+[type="number"]:focus+label,
+[type="number"].is-filled+label,
+[type="number"].with-autocomplete-active+label,
+[type="password"]:focus+label,
+[type="password"].is-filled+label,
+[type="password"].with-autocomplete-active+label {
+  transform: translate3d(0,-1.5em,0);
+  color: #20458d;
+  font-size: 12px;
+  font-size: 1.2rem;
+  background-color: #f5f5f5;
+  z-index: 666;
+}
+[type="email"]+label,
+[type="number"]+label,
+[type="tel"]+label,
+[type="url"]+label,
+[type="password"]+label {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #818181;
+  transition: all .2s ease;
+  font-style: italic;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  padding: 0 5px;
+  padding: 0 .5rem;
+  line-height: 1;
+  z-index: 0;
+}
+.signup-form .with-checkbox span {
+  margin-left: 3px;
+}
+
 select {
   transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -147,9 +147,28 @@ select.custom-select {
 }
 html select.custom-select-lg{
   height: calc(1.5em + 2rem + 3px);
-padding-top: .5rem;
-padding-bottom: .5rem;
-padding-left: 1rem;
-font-size: 1.25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+}
+.mauticform-has-error [type="text"],
+.mauticform-has-error [type="email"],
+.mauticform-has-error [type="url"],
+.mauticform-has-error [type="password"],
+.mauticform-has-error [type="number"],
+.mauticform-has-error textarea {
+  border-color: #e20613;
+  margin-right: 15px;
+  margin-right: 1.5rem;
+}
+.mauticform-has-error [type="text"]+label,
+.mauticform-has-error [type="text"]+label,
+.mauticform-has-error [type="email"]+label,
+.mauticform-has-error [type="url"]+label,
+.mauticform-has-error [type="password"]+label,
+.mauticform-has-error [type="number"]+label,
+ .mauticform-has-error textarea+label {
+  color: #e20613;
 }
 </style>

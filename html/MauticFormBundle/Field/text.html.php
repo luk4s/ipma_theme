@@ -41,11 +41,8 @@ endif;
 
 $html = <<<HTML
 
-            <div $containerAttr class="input-group">
-            {$textInput}
-            {$label}
-            {$help}
-                <span class="mauticform-errormsg" style="display: none;">$validationMessage</span>
+            <div $containerAttr class="input-group">{$textInput}{$label}{$help}     
+                <p class="mauticform-errormsg message-error" style="display: none;">$validationMessage</p>           
             </div>
 
 HTML;
