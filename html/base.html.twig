@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% if page is defined %}
+      {% if page is defined %}
         <title>{pagetitle}</title>
         <meta name="description" content="{pagemetadescription}">
-        {% endif %}
-        <link rel="stylesheet"href="https://www.ipma.cz/bundles/css/core" type="text/css" />
-        {# <link rel="stylesheet"href="https://www.pmdays.cz/bundles/css/core" type="text/css" /> #}
-        {# <link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/base.css') }}" type="text/css" /> #}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% endif %}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://www.ipma.cz/bundles/css/core" type="text/css" />
+      {# <link rel="stylesheet" href="https://www.pmdays.cz/bundles/css/core" type="text/css" /> #}
         {# <script type="text/javascript">
             const iframes = window.parent.document.getElementsByTagName("iframe");
             for (let item of iframes) {
@@ -19,12 +18,15 @@
     </head>
     <body class="no-webp" style="padding: 0 0 0 5px;margin: 0;display: block;-webkit-text-size-adjust: none;-webkit-font-smoothing: antialiased;width: 100%;height: 100%">
         <div class="page-container ng-scope">
-        <div class="container-fluid">
-        <div class="container-inner">
-        <div class="col-md-8">
-        {{ outputScripts('bodyOpen') }}
-        {% block content %}{% endblock %}
-        {{ outputScripts('bodyClose') }}
-        </div></div></div></div>
+          <div class="container-fluid">
+            <div class="container-inner">
+              <div class="col-md-8">
+              {{ outputScripts('bodyOpen') }}
+              {% block content %}{% endblock %}
+              {{ outputScripts('bodyClose') }}
+              </div>
+            </div>
+          </div>
+        </div>
     </body>
 </html>

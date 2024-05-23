@@ -2,6 +2,10 @@
 
 Custom theme form for web https://ipma.cz
 
+## v1.1.0
+### Fixed
+- mautic v5.x compatibility
+
 ## v1.0.1
 ### Fixed
 - validation error message format

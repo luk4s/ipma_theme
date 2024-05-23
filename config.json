@@ -2,6 +2,7 @@
   "name": "IPMA Czech Republic",
   "author": "Lukáš Pokorný",
   "authorUrl": "https://github.com/luk4s/ipma_theme",
+  "builder": ["legacy"],
   "features": [
     "form"
   ]
