@@ -2,6 +2,10 @@
 
 Custom theme form for web https://ipma.cz
 
+## v1.1.1
+### Fixed
+- https://github.com/mautic/mautic/pull/13781
+
 ## v1.1.0
 ### Fixed
 - mautic v5.x compatibility
