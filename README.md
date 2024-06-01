@@ -2,6 +2,10 @@
 
 Custom theme form for web https://ipma.cz
 
+## v1.1.2
+## Fixed
+- remove HTML markup from form | https://github.com/mautic/mautic/issues/13801
+
 ## v1.1.1
 ### Fixed
 - https://github.com/mautic/mautic/pull/13781
